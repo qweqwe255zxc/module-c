@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Вход — Барахолка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__bar">
+      <a href="index.html" class="logo"><span class="logo__mark">Б</span>Барахолка</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Объявления</a>
+      </nav>
+
+      <div class="header__actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Войти</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Регистрация</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="auth-wrap">
+    <form class="auth-card" novalidate>
+      <h1>Вход</h1>
+      <p class="subtitle">Войдите, чтобы разместить объявление</p>
+
+      <div class="field">
+        <label class="required" for="email">E-mail</label>
+        <input type="email" id="email" name="email" autocomplete="email">
+      </div>
+
+      <!-- Пример поля с ошибкой -->
+      <div class="field has-error">
+        <label class="required" for="password">Пароль</label>
+        <input type="password" id="password" name="password">
+        <p class="error-text">Введите пароль</p>
+      </div>
+
+      <button type="submit" class="btn btn-primary btn-block">Войти</button>
+
+      <p class="auth-card__footer">Нет аккаунта? <a href="register.html">Зарегистрироваться</a></p>
+    </form>
+  </main>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Мои объявления — Барахолка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__bar">
+      <a href="index.html" class="logo"><span class="logo__mark">Б</span>Барахолка</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Объявления</a>
+        <a href="my.html" class="is-active">Мои объявления</a>          <!-- только для авторизованного -->
+      </nav>
+
+      <!-- Авторизованный -->
+      <div class="header__actions">
+        <a href="form.html" class="btn btn-primary btn-sm">+ Разместить</a>
+        <span class="header__user">seller@example.com</span>
+        <button class="btn btn-outline btn-sm">Выйти</button>
+      </div>
+
+      <!-- Гость (вместо блока выше):
+      <div class="header__actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Войти</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Регистрация</a>
+      </div>
+      -->
+    </div>
+  </header>
+
+  <main class="container section">
+    <div class="results-head">
+      <h1 class="section-title">Мои объявления</h1>
+      <a href="form.html" class="btn btn-primary">+ Разместить объявление</a>
+    </div>
+
+    <div class="listing-grid">
+      <article class="listing-card">
+        <a href="listing.html" class="listing-card__media"><img src="img/seed-1.svg" alt="Велосипед Stels Navigator"></a>
+        <div class="listing-card__body">
+          <a href="listing.html" class="listing-card__title">Велосипед Stels Navigator</a>
+          <p class="listing-card__desc">Горный велосипед, 21 скорость</p>
+          <p class="listing-card__price">14 500 ₽</p>
+          <div class="listing-card__actions">
+            <a href="form.html" class="btn btn-outline btn-sm">Редактировать</a>
+            <button class="btn btn-danger btn-sm">Удалить</button>
+          </div>
+        </div>
+      </article>
+      <article class="listing-card">
+        <a href="listing.html" class="listing-card__media"><img src="img/seed-2.svg" alt="Кресло офисное"></a>
+        <div class="listing-card__body">
+          <a href="listing.html" class="listing-card__title">Кресло офисное</a>
+          <p class="listing-card__desc">Сетчатая спинка, регулировка высоты</p>
+          <p class="listing-card__price">6 200 ₽</p>
+          <div class="listing-card__actions">
+            <a href="form.html" class="btn btn-outline btn-sm">Редактировать</a>
+            <button class="btn btn-danger btn-sm">Удалить</button>
+          </div>
+        </div>
+      </article>
+      <article class="listing-card">
+        <a href="listing.html" class="listing-card__media"><img src="img/seed-4.svg" alt="Настольная лампа"></a>
+        <div class="listing-card__body">
+          <a href="listing.html" class="listing-card__title">Настольная лампа</a>
+          <p class="listing-card__desc"></p>
+          <p class="listing-card__price">900 ₽</p>
+          <div class="listing-card__actions">
+            <a href="form.html" class="btn btn-outline btn-sm">Редактировать</a>
+            <button class="btn btn-danger btn-sm">Удалить</button>
+          </div>
+        </div>
+      </article>
+      <article class="listing-card">
+        <a href="listing.html" class="listing-card__media"><img src="img/seed-6.svg" alt="Книжный шкаф"></a>
+        <div class="listing-card__body">
+          <a href="listing.html" class="listing-card__title">Книжный шкаф</a>
+          <p class="listing-card__desc">Дуб, высота 180 см</p>
+          <p class="listing-card__price">4 500 ₽</p>
+          <div class="listing-card__actions">
+            <a href="form.html" class="btn btn-outline btn-sm">Редактировать</a>
+            <button class="btn btn-danger btn-sm">Удалить</button>
+          </div>
+        </div>
+      </article>
+    </div>
+
+    <!-- Если своих объявлений нет:
+    <div class="empty-state">У вас пока нет объявлений.</div>
+    -->
+  </main>
+</body>
+</html>

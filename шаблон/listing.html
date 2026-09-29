@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Велосипед Stels Navigator — Барахолка</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <div class="container header__bar">
+      <a href="index.html" class="logo"><span class="logo__mark">Б</span>Барахолка</a>
+
+      <nav class="main-nav">
+        <a href="index.html">Объявления</a>
+        <a href="my.html">Мои объявления</a>          <!-- только для авторизованного -->
+      </nav>
+
+      <!-- Авторизованный -->
+      <div class="header__actions">
+        <a href="form.html" class="btn btn-primary btn-sm">+ Разместить</a>
+        <span class="header__user">seller@example.com</span>
+        <button class="btn btn-outline btn-sm">Выйти</button>
+      </div>
+
+      <!-- Гость (вместо блока выше):
+      <div class="header__actions">
+        <a href="login.html" class="btn btn-outline btn-sm">Войти</a>
+        <a href="register.html" class="btn btn-primary btn-sm">Регистрация</a>
+      </div>
+      -->
+    </div>
+  </header>
+
+  <main class="container section">
+    <p class="breadcrumbs"><a href="index.html">Объявления</a> / Велосипед Stels Navigator</p>
+
+    <div class="listing-detail">
+      <div class="listing-detail__media">
+        <img src="img/seed-1.svg" alt="Велосипед Stels Navigator">
+      </div>
+
+      <div class="listing-detail__info">
+        <h1>Велосипед Stels Navigator</h1>
+        <p class="listing-detail__price">14 500 ₽</p>
+        <p class="listing-detail__desc">Горный велосипед, 21 скорость</p>
+
+        <div class="card">
+          <p class="hint" style="margin-bottom: 10px">Контакты продавца</p>
+          <button class="btn btn-outline">Показать e-mail</button>
+
+          <!-- После клика (вместо кнопки):
+          <p class="listing-detail__contact">seller@example.com</p>
+          -->
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
